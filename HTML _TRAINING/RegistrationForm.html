@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration From</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>STUDENT REGISTRATION FORM</h1>
+    </header>
+
+    <main>
+      <section>
+
+        <form method="get">
+
+          <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <br />
+            <label for="sname">Student Name:</label>
+            <input name="sname" type="text" placeholder="Enter Your Name" />
+
+            <br /><br />
+
+            <label for="phone">Mobile No.:</label>
+            <input name="phone" type="number" placeholder="Enter Phone Number"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{3}" />
+
+            <br /><br />
+            <label for="email">Email Id:</label>
+            <input name="email" type="email" placeholder="example@gmail.com" />
+
+            <br /><br />
+
+            <label for="birth">Date Of Birth:</label>
+            <input name="birth" type="date" />
+
+            <br /><br />
+
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" name="genderOption" value="male" /><label
+              for="male">Male</label>
+            <input type="radio" name="genderOption" value="female" /><label
+              for="female">Female</label>
+            <input type="radio" name="genderOption" value="others" /><label
+              for="others">Others</label>
+
+            <br><br>
+
+            <label for="address">Address:</label>
+            <br>
+            <textarea name="address" rows="4" cols="40"></textarea>
+
+            <br><br>
+
+            <label for="skillRange">Skill Range</label>
+
+            <input type="range" name="skillRange" id="skillRange" min="0"
+              max="100" value="50"
+              oninput="this.nextElementSibling.value = this.value">
+            <output>50</output>
+          </fieldset>
+
+          <br /><br />
+
+          <fieldset>
+            <legend>GUARDIAN'S CREDENTIALS</legend>
+            <br>
+            <label for="fname">Father Name:</label>
+            <input name="fname" type="text" placeholder="Enter Father's Name" />
+
+            <br /><br />
+
+            <label for="mname">Mother Name:</label>
+            <input name="mname" type="text" placeholder="Enter Mother's Name" />
+          </fieldset>
+
+          <br /><br />
+          <fieldset>
+            <legend>ACADEMIC CREDENTIALS</legend>
+            <br>
+            <label for="course">Course:</label>
+            <select name="course" id="courses">
+              <option value="NULL" selected disabled>......</option>
+              <option value="CSIT">BSc CSIT</option>
+              <option value="BCA">BCA</option>
+              <option value="MBA">MBA</option>
+              <option value="BBA">BBA</option>
+              <option value="BBM">BBM</option>
+              <option value="BHM">BHM</option>
+              <option value="MBBS">MBBS</option>
+              <option value="BSc Nursing & Midwifery">
+                BSc Nursing & Midwifery
+              </option>
+              <option value="BE Civil">BE Civil</option>
+              <option value="BSc Agriculture">BSc Agriculture</option>
+              <option value="BBM">BBM</option>
+              <option value="BIT">BIT</option>
+            </select>
+
+            <br /><br />
+
+            <label for="branch">Branch:</label>
+            <input name="branch" type="checkbox" value="IT" /><label>IT</label>
+            <input name="branch" type="checkbox"
+              value="Engineering" /><label>Engineering</label>
+            <input name="branch" type="checkbox"
+              value="Management" /><label>Management</label>
+            <input name="branch" type="checkbox"
+              value="Medicine" /><label>Medicine</label>
+          </fieldset>
+
+          <br><br>
+          <fieldset>
+            <legend>EXTRA CREDENTIALS</legend>
+            <label for="photo">Student Photo:</label>
+            <input type="file" name="photo" />
+          </fieldset>
+
+          <br /><br />
+
+          <input type="submit" name="submit" />
+          <input type="reset" name="reset" />
+        </form>
+      </section>
+
+      <br />
+
+      <section>
+        <form target="iframe"
+          action="https://en.wikipedia.org/w/index.php?search=HTML"
+          method="get">
+
+          <label for="search">Search:</label>
+
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Type to Search">
+
+          <input type="submit" value="Search">
+        </form>
+
+        <iframe
+          name="iframe"
+          width="600"
+          height="500"
+          frameborder="0"></iframe>
+      </section>
+
+      <br>
+
+      <section>
+
+      </section>
+      <!-- <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4JP6XgRbs_0?si=B_PYA7GVekPaLU9y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://wikipedia.com" frameborder="0"></iframe>
+
+            <video src="https://samplelib.com/mp4/sample-5s-720p.mp4" width="560" height="315" controls autoplay muted loop></video>
+
+            <video width="560" height="315" src="https://samplelib.com/mp4/sample-15s.mp4" type="video/mp4" controls autoplay muted loop></video>
+
+            <video  width="560" height="315" src="./VID20250328121431.mp4" controls autoplay muted loop></video>
+        </section> -->
+    </main>
+
+    <footer>&copy; Copyright- This is an Private Property of the
+      Developer</footer>
+  </body>
+
+</html>

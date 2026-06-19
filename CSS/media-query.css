@@ -1,0 +1,82 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+/* MEDIA QUERIES TUTORIAL STYLING */
+
+/* body{
+    background-color: black;
+    color: white;
+    font-family: monospace;
+} */
+
+/* .parent{
+    display: flex;
+    color: cyan;
+    gap: 20px;
+}
+@media(max-width:768px){
+    .parent{
+        color: pink;
+    }
+}
+@media(max-width:360px){
+    .parent{
+        color: yellow;
+        flex-direction: column;
+    }
+    .child{
+        visibility: hidden;
+    }
+} */
+
+.body{
+    height: 200vh;
+}
+.parent{
+    background-color: blue;
+    height: 100%;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 100px;
+}
+.box-1{
+    /* transform: translate(100px, 100px); */
+    background-color: aqua;
+    /* margin: auto; */
+    color: black;
+}
+.box-1{
+    animation: move 3s infinite  ;
+}
+.box-2{
+    animation: move 3s infinite;
+    animation-delay: 2s;
+    position: absolute;
+    top: 0;
+}
+@keyframes move{
+    0%{
+        transform: translate(0px, 0px); 
+    }
+    25%{
+        transform: translate(200px, 0px);
+    }
+    50%{
+        transform: translate(200px, 200px);
+    }
+    75%{
+        transform: translate(0px, 200px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}

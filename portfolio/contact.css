@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+
+
+/* HEADER */
+header {
+    background-color: #FBF8F3;
+    padding: 0px 100px 0px 100px;
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+main{
+    margin: 0px 100px 0px 100px;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    min-height: 90px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-logo img {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px 14px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.auth a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    color: black;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.auth a:hover {
+    background-color: #e7e3de;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION-1 STYLING */
+/* CONNECT STYLING */
+.section-1{
+    margin: 150px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-text-title{
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0px 0px 20px 20px;
+}
+.contact-text-subtitle{
+    font-size: 20px;
+    margin: 0px 0px 30px 20px;
+    line-height: 1.3;
+    width:550px;
+}
+.icon-with-text,
+.icon-with-text-2,
+.icon-with-text-3{
+    display: flex;
+    gap: 12px;
+    margin: 20px 20px 20px 20px;
+}
+.icon-related-text-title{
+    color: #86888e;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.icon-related-text-subtitle{
+    font-size: 12px;
+}
+.icon-logo{
+    background-color: #F3F4F6;
+    padding: 6px;
+    border-radius: 5px;   
+}
+.icon-logo i{
+    color: #1FD5F9;
+}
+.text-related-title{
+    font-size: 12px;
+    font-weight: 300;
+    color: #86888e;
+    margin-left: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.follow-work-link{
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 6px;
+    gap: 10px;
+}
+.follow-work-link i{
+    color: black;
+}
+
+
+
+/* CONTACT FORM STYLING */
+.contact-form{
+    border: 2px solid #EDEFF1;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+.contact-form .contact-form-title{
+    font-size: 22px;
+    font-weight: 800;
+}
+.contact-form .contact-form-subtitle{
+    font-size: 12px;
+    color: #878C97;
+    margin-top: 8px;
+}
+.name-email-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.actual-form .full-name,
+.actual-form .email-address,
+.actual-form .subject,
+.actual-form .message{
+    display: block;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+.actual-form .type-full-name,
+.actual-form .type-email,
+.actual-form .type-subject,
+.actual-form .type-message{
+    border: 2px solid #F1F2F4;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.actual-form .subject-container input{
+    padding-right: 64%;
+}
+.actual-form .name-container input{
+    padding-right: 64%;
+
+}
+.actual-form .email-container{
+    margin-left: 22%
+}
+.actual-form .submit-container{
+    text-align: center;
+    padding: 14px;
+    border-radius: 10px;
+}
+.actual-form .submit-container input{
+    display: none;
+}
+.actual-form .submit-container button{
+    border: none;
+    padding: 20px 150px 20px 150px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.4s ease;
+    border: 2px solid #F1F2F4;
+    cursor: pointer;
+}
+.actual-form .submit-container button:hover{
+    background-color: #1FD5F9;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION-2 */
+/* COLLABORATION STYLING */
+.collab{
+    padding: 100px;
+    background-color: #FAFAFB;
+}
+.collab .quote{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+.collab .quote-subtitle{
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #868B96;
+    white-space: pre-wrap;
+}
+.get-touch a{
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #F1F2F4;
+    padding: 10px 200px;
+    margin-left: 30%;
+    border-radius: 10px;
+    color: black;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.view-work a:hover,
+.get-touch a:hover{
+    background-color: #1FD5F9;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    padding: 0px 100px 0px 100px;
+}
+.footer-flex-container {
+    display: flex;
+    padding: 60px 40px;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.footer-logo img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-portfolio-intro p {
+    font-size: 16px;
+    color: #9397A1;
+    max-width: 350px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.footer-navigation p,
+.footer-connect p {
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.footer-navigation-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-navigation-link a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+}
+
+.footer-connect-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-connect-icons i {
+    color: black;
+    font-size: 22px;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-end p {
+    font-size: 16px;
+    color: #636A78;
+}
+
+.footer-end-link {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-end-link a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #636A78;
+}
